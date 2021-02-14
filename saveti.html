@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/saveti.css">
+    <title>Fit&Healthy - Saveti</title>
+</head>
+<body>
+	<header>
+        <a href="index.html">
+            <img src="./img/FitHealthy.png" class="logo-img">
+        </a>
+                
+        <ul class="menu-bar">
+            <li >
+                <a href="index.html">Dobrodošli</a>
+            </li>
+            <li class>
+                <a href="recepti.html">Recepti</a>
+            </li>
+            <li class="current">
+                <a href="saveti.html">Saveti</a>
+            </li>
+            <li>
+                <a href="utisci.html">Utisci</a>
+            </li>
+            <li>
+                <a href="bmi.html">BMI Kalkulator</a>
+            </li>
+        </ul>
+    </header>
+
+    <table class="table-content" id="table1" >
+  <thead>
+        <tr>
+                <th>Pregled</th>
+                <th>Savet</th>
+                <th>Objašnjenje</th>
+        </tr>
+  </thead>
+  <tbody>
+        <tr>
+                <td style="width: 300px"><img src="./img/tabela/tecnost.jpg" style="width: 300px; height: 200px;" alt="Savet" class="img"></td>
+                <td style="width: 200px">Unos tečnosti</td>
+                <td style="width: 300px">Preporučeno je da se na svakih 25 kg težine pije 1l tečnosti. Na primer, ukoliko odrastao muškarac teži 100 kg, on bi dnevno trebalo da pije 4 litre tečnosti.</td>
+        </tr>
+        <tr>
+                <td style="width: 300px"><img src="./img/tabela/caj.jpg" style="width: 300px; height: 200px;" alt="Savet" class="img"></td>
+                <td style="width: 200px">Vrste tečnosti</td>
+                <td style="width: 300px">U okviru dnevnog unosa tečnosti, preporučuje se da udeo vode bude 1/2, dok udeo nezaslađene limunade i diuretskih čajeva kao što su rastavić, maslačak, breza, itd., bude 1/4.</td>
+                
+        </tr>
+        <tr>
+                <td style="width: 300px"><img src="./img/tabela/kafa.jpg" style="width: 300px; height: 200px;" alt="Savet" class="img"></td>
+                <td style="width: 200px">Kafa</td>
+                <td style="width: 300px">Kafu (tursku, nes, espreso) obavezno konzumirajte bez mleka i šećera, maksimalno 2-3 male kafe dnevno, obavezno uz čašu vode.</td>
+                
+        </tr>
+        <tr>
+                <td style="width: 300px"><img src="./img/tabela/hrana.jpg" style="width: 300px; height: 200px;" alt="Savet" class="img"></td>
+                <td style="width: 200px">Priprema hrane</td>
+                <td style="width: 300px">Kuvana hrana se sprema bez zaprške (brašna, ulja); izbaciti jake začine, vegetu, kari,biber. Na ulju se ništa ne prži i ne peče, a kašika maslinovog ili lanenog ulja se dodaje na kraju pripreme jela. Meso se priprema kuvano na pari, kuvano u vodi (malo vode), na roštilju, zavijeno u aluminijumsku foliju, na teflonu ili prženo na foliji za prženje bez ulja, u vatrostalnoj posudi ili zapečeno u rerni. Ribu pripremate isto kao i posno meso (kuvate, pečete na roštilju, u foliji za prženje itd.). Obavezno odstranite kožicu jer sadrži velike količine holesterola!</td>
+                
+        </tr>
+        <tr>
+                <td style="width: 300px"><img src="./img/tabela/zacini.jpg" style="width: 300px; height: 200px;" alt="Savet" class="img"></td>
+                <td style="width: 200px">Dozvoljeni začini</td>
+                <td style="width: 300px">Alkoholno/vinsko sirće, kuhinjsku so i vegetu izbacite iz upotrebe! Alternative su vam: jabukovo sirće ili limunov sok, kalijumova ili himalajska so i biljni začine (mirodjija, origano, peršun, majčina dušica, začin IN). Kečap i pavlaku izbacite iz upotrebe (kao dodatak hrani i salatama možete koristiti kašičicu senfa).</td>
+                
+        </tr>
+        <tr>
+                <td style="width: 300px"><img src="./img/tabela/salata.jpg" style="width: 300px; height: 200px;" alt="Savet" class="img"></td>
+                <td style="width: 200px">Kako i kada jesti salatu</td>
+                <td style="width: 300px">Uz svaki obrok konzumirajte što veću porciju sveže salate, uvek začinjenu maslinovim uljem, jabukovim sirćetom ili limunovim sokom. U salatu od npr 1,5 kg kupusa dovoljno je dodati 1 ravnu kašiku himalajske ili kalijumove soli, 1,5 kašiku maslinovog ulja i 5-6 kašika jabukovog sirćeta. U salatu uvek dodajte 1 supenu kašiku lana ili chia semenki. Pripremićete ih tako što ćete ih prethodno potopiti u dressing koji ste napravili za salatu kako bi nabubrile, pa nakon toga prelijte salatu. Sveža salata (kupus, crveni kupus, zelena salata, rukola, iceberg) sadrži dijetna vlakna (celulozu-koja ne podleže varenju u digestivnom traktu), pruža produžen osećaj sitosti, čisti creva, reguliše LDL holesterol, gubitak kilograma i smanjuje procenta masti u telu.</td>
+                
+        </tr>
+  </tbody>
+</table>
+
+<div class="output">
+        <script>
+           var now = new Date();    
+           document.write("<font size='+1'>");
+           var hours=now.getHours();
+           var minutes=now.getMinutes();
+           var seconds=now.getSeconds();
+           var month=now.getMonth() +1;
+           var day=now.getDate();
+           var year=now.getFullYear();
+           document.write( day + "." + month + "." + year +"<br>");
+           document.write( hours + ":" + minutes + ":" + seconds);
+           document.write("</font>");
+         </script>
+      </div>
+    <footer class="footer-text">
+    <div class="row">
+        <h3>Kontaktirajte nas!</h3>
+        <hr>
+        <h4>Bulevar Mihaila Pupina 111, Beograd, Srbija</h4>
+        <h4>+381658443096</h4>
+
+    </div>
+</footer>
+</body>
+</html>

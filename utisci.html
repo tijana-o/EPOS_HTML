@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/welcome.css">
+    <link rel="stylesheet" href="./css/share.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+      #map{
+        height: 250px;
+        width: 250px;
+
+      }
+    </style>
+        <title>Fit&Healthy - Utisci</title>
+
+</head>
+<body >
+      <header>
+        <a href="index.html">
+            <img src="./img/FitHealthy.png" class="logo-img">
+        </a>
+                
+        <ul class="menu-bar">
+            <li >
+                <a href="index.html">Dobrodošli</a>
+            </li>
+            <li >
+                <a href="recepti.html">Recepti</a>
+            </li>
+            <li>
+                <a href="saveti.html">Saveti</a>
+            </li>
+            <li class="current">
+                <a href="utisci.html">Utisci</a>
+            </li>
+            <li>
+                <a href="bmi.html">BMI Kalkulator</a>
+            </li>
+        </ul>
+    </header>
+
+
+    <div class="glavna">
+    <div id="map" class="mapa" width="250" height="250"></div>
+
+    <form class="forma" name="form1" action="#" onsubmit="required()">
+        <label>Vaše ime:</label> <br>
+        <input type="text" name = 'text1' class="input"> <br>
+
+        <label>Vaš utisak:</label> <br>
+        <textarea rows="5" placeholder="Napišite utiske..." name='text2'></textarea> <br>
+
+        <label>Koliko su Vam recepti pomogli da se zdravije hranite?</label> <br>
+        <select >
+            <option value="mnogo">Mnogo su mi pomogli</option>
+            <option value="umereno">Umereno su mi pomogli</option>
+            <option value="malo">Malo su mi pomogli</option>
+            <option value="nisu">Nisu mi pomogli</option>
+        </select>
+        <br>
+
+        <label>Vaš e-mail:</label> <br>
+        <input type="email" name = 'text3' class="input">
+        <br>
+
+        <input type="submit" name="submit" value="Pošalji" class="button"/>
+
+    </form>
+    </div>
+
+    <script>
+function initMap() {
+  var uluru = {lat: 44.8555948, lng: 20.3809823};
+  var map = new google.maps.Map(document.getElementById('map'), {zoom: 17, center: uluru});
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQlRs3HiGIt_mXfMX3hQiuxGNAgBz1ibg&callback=initMap">
+    </script>
+
+    <script src="./js/script_share.js"></script>
+
+     <footer class="footer-text">
+    <div class="row">
+        <h3>Kontaktirajte nas!</h3>
+        <hr>
+        <h4>Bulevar Mihaila Pupina 111, Beograd, Srbija</h4>
+        <h4>+381658443096</h4>
+
+    </div>
+</footer>
+</body>
+</html>

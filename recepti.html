@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/recepti.css">
+    <title>Fit&Healthy - Recepti</title>
+</head>
+<body>
+    
+     <header>
+        <a href="index.html">
+            <img src="./img/FitHealthy.png" class="logo-img">
+        </a>
+                
+        <ul class="menu-bar">
+            <li >
+                <a href="index.html">Dobrodošli</a>
+            </li>
+            <li class="current">
+                <a href="recepti.html">Recepti</a>
+            </li>
+            <li>
+                <a href="saveti.html">Saveti</a>
+            </li>
+            <li>
+                <a href="utisci.html">Utisci</a>
+            </li>
+            <li>
+                <a href="bmi.html">BMI Kalkulator</a>
+            </li>
+        </ul>
+    </header>
+  
+    
+
+<div class="img-area">
+    <div class="single-img">
+       <a href="#r1"> <img src="./img/recepti/pita-heljdine-kore.png" alt="" width="250" height="250"></a>
+    </div> 
+
+    <div class="single-img">
+        <a href="#r2"><img src="./img/recepti/cheesecake.png" alt="" width="250" height="250"></a>
+    </div> 
+
+    <div class="single-img">
+        <a href="#r3"><img src="./img/recepti/posni-kolac.png" alt="" width="250" height="250"></a>
+    </div> 
+
+    <div class="single-img">
+        <a href="#r4"> <img src="./img/recepti/hleb.png" alt="" width="250" height="250"></a>
+    </div>
+
+    <div class="single-img">
+       <a href="#r5"> <img src="./img/recepti/punjene-tikvice.png" alt="" width="250" height="250"></a>
+    </div> 
+
+    <div class="single-img">
+     <a href="#r6">  <img src="./img/recepti/rizoto.png" alt="" width="250" height="250"></a> 
+    </div> 
+
+    <div class="single-img">
+        <a href="#r7"><img src="./img/recepti/integralna-testenina.png" alt="" width="250" height="250"></a>
+    </div> 
+
+    <div class="single-img">
+        <a href="#r8"><img src="./img/recepti/cufte-orah.png" alt="" width="250" height="250"></a>
+    </div> 
+</div>
+<hr>
+<div class="img-area-rcp">
+     <div id="r1" class="single-img-rcp"><img src="./img/recepti/recipes/pita-heljdine-kore-recept.png" alt=""></div> 
+    <div id="r2" class="single-img-rcp"><img src="./img/recepti/recipes/cheesecake-recept.jpg" alt=""></div> 
+    <div id="r3" class="single-img-rcp"><img src="./img/recepti/recipes/posni-kolac-recept.png" alt=""></div> 
+    <div id="r4" class="single-img-rcp"><img src="./img/recepti/recipes/hleb-recept.png" alt=""></div> 
+    <div id="r5" class="single-img-rcp"><img src="./img/recepti/recipes/punjene-tikvice-recept.png" alt=""></div> 
+    <div id="r6" class="single-img-rcp"><img src="./img/recepti/recipes/rizoto-recept.png" alt=""></div> 
+    <div id="r7" class="single-img-rcp"><img src="./img/recepti/recipes/testenina-recept.png" alt=""></div> 
+    <div id="r8" class="single-img-rcp"><img src="./img/recepti/recipes/cufte-od-oraha-recept.png" alt=""></div> 
+</div>
+<input id="myBtn" type="button" name="dugme" value="Vrh strane" onclick="topFunction()">
+<script>
+   mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+  <footer class="footer-text">
+    <div class="row">
+        <h3>Kontaktirajte nas!</h3>
+        <hr>
+        <h4>Bulevar Mihaila Pupina 111, Beograd, Srbija</h4>
+        <h4>+381658443096</h4>
+
+    </div>
+</footer>
+</body>
+
+
+</html>

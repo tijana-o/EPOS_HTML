@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/welcome.css">
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./js/script.js"></script>
+
+ 
+<script>
+$(document).ready(function () {
+var large={width: "250px",height: "250px"};
+var small={width: "400px",height: "400px"};
+var count=1; 
+$("#motivation").click(function () { 
+(count==1)?$(this).animate(large):$(this).animate(small);
+count = 1-count;
+})
+});
+</script>
+	
+    <title>Fit&Healthy - Dobrodošli</title>
+</head>
+<body>
+    
+     <header>
+        <a href="index.html">
+            <img src="./img/FitHealthy.png" class="logo-img">
+        </a>
+                
+        <ul class="menu-bar">
+            <li class="current">
+                <a href="index.html">Dobrodošli</a>
+            </li>
+            <li >
+                <a href="recepti.html">Recepti</a>
+            </li>
+            <li>
+                <a href="saveti.html">Saveti</a>
+            </li>
+            <li>
+                <a href="utisci.html">Utisci</a>
+            </li>
+            <li>
+                <a href="bmi.html">BMI Kalkulator</a>
+            </li>
+        </ul>
+    </header>
+
+
+    <ul class="bo-slider">
+            <li data-url="https://i.ytimg.com/vi/D7y4xuBDO88/maxresdefault.jpg" data-type="image" class="photo"></li>
+            <li data-url="https://caringpeopleinc.com/wp-content/uploads/2017/06/Healthy-Recipe.jpeg" data-type="image" class="photo">L2</li>
+            <li data-url="https://img1.cookinglight.timeinc.net/sites/default/files/styles/4_3_horizontal_-_1200x900/public/image/2017/02/main/red-lentil-rice-cakes-with-simple-tomato-salsa-0810.jpg?itok=LXOjSL-S" data-type="image" class="photo">L3</li>
+     </ul>
+ 
+
+  <div class="content">
+    <h3 class="center"><span class="tag">O NAMA</span></h3>
+    <p class="paragraf" style="background-color: #374665">Dobrodošli na naš web sajt! Naša misija je da kroz ukusne recepte i korisne savete postignemo zajednički cilj, a to je ishrana koja će Vam pomoći da budete zdravi, da izgledate lepo i da se osećate bolje nego ikada. <br><br>
+    Naš predlog je da najpre na stranici BMI kalkulator izračunate Vaš body mass index, kako bismo zajedno utvrdili Vašu polaznu osnovu i na dalje pratili rezultate i uspehe. Zatim uz pomoć naših recepata i saveta isplanirajte Vašu nedelju na najzdraviji, najispravniji i najukusniji način, kako bismo zajedno sačuvali zdravlje i promenili svet!<br><br>
+      <i>"Veruj da  možeš i na pola si puta."</i>-Teodor Ruzvelt <br><br>
+    <img src="./img/motivation.jpg" style="width:50%; height: 50%" class="motivation" id="motivation">
+    Stojimo Vam na raspolaganju u svakom trenutku, Vaš <strong>Fit&Healthy tim</strong></p>
+  </div>
+
+<footer class="footer-text">
+    <div class="row">
+        <h3>Kontaktirajte nas!</h3>
+        <hr>
+        <h4>Bulevar Mihaila Pupina 111, Beograd, Srbija</h4>
+        <h4>+381658443096</h4>
+
+    </div>
+</footer>
+     <script type="text/javascript"> $('.bo-slider').boSlider({ slideShow: true, interval: 5000, animation: "fade" }); </script>
+</body>
+
+
+</html>

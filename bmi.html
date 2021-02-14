@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bmi.css"> 
+    <title>Fit&Healthy - BMI kalkulator</title>
+    <script src="js/script_bmi.js"></script>
+</head>
+<body>
+    
+     <header>
+        <a href="index.html">
+            <img src="./img/FitHealthy.png" class="logo-img">
+        </a>
+                
+        <ul class="menu-bar">
+            <li >
+                <a href="index.html">Dobrodošli</a>
+            </li>
+            <li >
+                <a href="recepti.html">Recepti</a>
+            </li>
+            <li>
+                <a href="saveti.html">Saveti</a>
+            </li>
+            <li>
+                <a href="utisci.html">Utisci</a>
+            </li>
+            <li class="current">
+                <a href="bmi.html">BMI kalkulator</a>
+            </li>
+        </ul>
+    </header>
+    <br>
+    <br>
+    <div class="bmi-calculator">
+    <h2 class="bmi-cal">BMI Kalkulator<br></h2>
+   <div class="bmi-cal">
+        
+    <p>
+        <label><br><b style="color: white">Težina</b></label><br>
+    <input id="weight" placeholder="Kilogrami">
+</p></div>
+<div class="bmi-cal">
+        
+    <p>
+        <label><br><b style="color: white">Visina</b></label><br>
+    <input id="height" placeholder="Centimetri">
+</p></div>
+
+<div class="bmi-cal">
+<p>
+    <br>
+    <br>
+    <input id="btn" type="button" name="dugme" value="Izračunaj" onclick="bmiFunction()">
+    <br>
+    <br>
+</p></div>
+
+    
+        <div class="bmi-cal"><p><br><b>BMI:</b> <br><br><span  id ="output"></span></p></div> 
+        <br>
+        <div class="bmi-cal"><p><br><b>Kategorija:</b> <br><br><span  id ="resault"></span></p></div> 
+        <br>
+    
+    
+    </div>
+
+      <footer class="footer-text">
+    <div class="row">
+        <h3>Kontaktirajte nas!</h3>
+        <hr>
+        <h4>Bulevar Mihaila Pupina 111, Beograd, Srbija</h4>
+        <h4>+381658443096</h4>
+
+    </div>
+</footer>
+
+</body>
+</html>
+
+
